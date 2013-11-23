@@ -28,7 +28,10 @@
 	<body>
 					<!-- NAVIGATION -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<!-- insertion de la bannière-->
+				<?php include("banniere.html"); ?>
+			<!-- insertion de la bannière-->
+    <div class="navbar navbar-inverse " role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

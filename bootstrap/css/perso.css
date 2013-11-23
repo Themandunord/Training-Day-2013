@@ -2,3 +2,17 @@ body {
 	margin-top : 35px;
 
 }
+
+#banniere{
+	margin-top: -35px;
+	height: 200px;
+	background: url("../../img/fondsite.jpg") left top repeat-x; /*image minuscule répétée à l'infini.*/
+}
+
+#banniere img { 
+display: block; 
+margin: 0 auto; 
+height:200px; /* spécifiez la hauteur de l'image, une bonne attitude à prendre */ 
+width: 800px; /* spécifiez la largeur de l'image, une bonne habitude à prendre */ 
+
+}
