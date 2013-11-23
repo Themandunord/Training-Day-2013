@@ -67,4 +67,11 @@ if(!empty($_POST)){// Hachage du mot de passe
 
 	</div>
 </div>
+<script>
+  // Pour chaque fichier
+  $('#top-menu li').removeClass("active");
+  // on remplace login par l'id du lien dans le menu
+  $('#recherche').addClass('active');
+
+</script>
 <?php include "include/footer.php"; ?>
