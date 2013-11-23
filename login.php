@@ -97,6 +97,10 @@ if(!empty($_POST)){// Hachage du mot de passe
         <div class="clearfix"></div>
 </div>
 <script>
-  $('#login').css('color', 'red').addClass('active');
+  // Pour chaque fichier
+  $('#top-menu li').removeClass("active");
+  // on remplace login par l'id du lien dans le menu
+  $('#login').addClass('active');
+
 </script>
 <?php include "include/footer.php"; ?>
