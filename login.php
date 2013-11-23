@@ -19,7 +19,7 @@ if(!empty($_POST)){// Hachage du mot de passe
 	if (!$resultat)
 	{
 	    echo 'Mauvais identifiant ou mot de passe !';
-      header('Location: fsdf.php');
+      header('Location: login.php');
         die('redirecting...');
 	}
 	else
