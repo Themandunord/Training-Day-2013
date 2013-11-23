@@ -26,6 +26,7 @@
   </head>
 	<body>
 					<!-- NAVIGATION -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -39,9 +40,9 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="login.php">login</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li id="home" class="active"><a href="./index.php">Home</a></li>
+            <li><a id="login" href="./login.php">login</a></li>
+            <li><a id="contact" href="./contact.php">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

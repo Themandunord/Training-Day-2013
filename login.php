@@ -96,4 +96,7 @@ if(!empty($_POST)){// Hachage du mot de passe
         </div>
         <div class="clearfix"></div>
 </div>
+<script>
+  $('#login').css('color', 'red').addClass('active');
+</script>
 <?php include "include/footer.php"; ?>
