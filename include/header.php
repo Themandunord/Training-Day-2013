@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site de convoiturage">
     <meta name="author" content="Ensisa">
-	<link type="image/x-icon" rel="icon" href="img/favicon.ico">
+	<link type="image/x-icon" rel="icon" href="favicon.ico">
 
     <title>Ensisa Covoiturage</title>
 
@@ -37,12 +37,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Ensisa Convoiturage</a>
+          <a class="navbar-brand" href="http://www.youtube.com/watch?v=kxopViU98Xo">Ensisa Convoiturage</a>
         </div>
         <div id="top-menu" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li id="home" class="active"><a href="./index.php">Home</a></li>
-            <li id="login"><a href="./login.php">login</a></li>
+            <li id="home" class="active"><a href="./index.php"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li id="login"><a href="./login.php">Login</a></li>
             <li id="contact"><a href="./contact.php">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
