@@ -11,7 +11,7 @@ $pseudo = $_POST['pseudo_new'];
 
 include 'database.php';
 // Insertion
-$req = $bdd->prepare('INSERT INTO user(name, firstname, pass, email, phone, pseudo, date_inscription) VALUES(:name, :firstname, :pass, :email, :phone, :pseudo, CURDATE())');
+$req = $db->prepare('INSERT INTO user(name, firstname, pass, email, phone, pseudo, date_inscription) VALUES(:name, :firstname, :pass, :email, :phone, :pseudo, CURDATE())');
 $req->execute(array(
     'name' => $name,
     'firstname' => $firstname,
