@@ -85,14 +85,21 @@ if(!empty($_POST)){// Hachage du mot de passe
                 </div>
                 <div class="tab-pane fade" id="create">
                   <form id="tab" method="POST" action="include/register.php">
-                    <label for="user_new">Pseudo</label>
-                    <input type="text" name="user_new" id="user_new" class="input-xlarge">
-                    <label for="email_new">Email</label>
-                    <input type="text" name="email_new" id="email_new" class="input-xlarge">
-                    <label class="control-label" for="pass_new">Mot de passe</label>
-                        <div class="controls">
-                          <input type="password" id="pass_new" name="pass_new" placeholder="" class="input-xlarge"> 
-                    <div>
+                    <label for="nom">Nom :</label>
+                      <p><input type="text" name="name_new" id="name_new"/></p>
+                      
+                    <label for="">Prénom :</label>
+                      <p><input type="text" name="firstname_new" id="firstname_new"/></p>
+                      
+                    <label for="mail"> Adresse mail :</label>
+                      <p> <input type="email" name="email_new" id="email_new" /></p>
+
+                    <label>Votre mot de passe :</label>
+                      <p><input type="password" name="pass_new" id="pass_new" /></p>
+                      
+                    <label>Téléphone :</label>
+                      <p><input type="tel" name="phone_new" id="phone_new"/></p>
+                      
                       <button class="btn btn-primary">Créer un compte</button>
                     </div>
                   </div>
