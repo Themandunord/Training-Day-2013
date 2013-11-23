@@ -1,5 +1,4 @@
-<?php include "include/header.php"; ?>
-<?php include "include/nav.php";?>  
+<?php include "include/header.php"; ?> 
     <div class="container">
 
       <div class="starter-template">
