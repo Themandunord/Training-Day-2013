@@ -11,7 +11,7 @@ if(!empty($_POST)){// Hachage du mot de passe
 	// Vérification des identifiants
 	$req = $db->prepare('SELECT id FROM user WHERE email = :email AND pass = :pass');
 	$req->execute(array(
-	    'email' => $email,
+	    'email' => $pseudo,
 	    'pass' => $pass_hache));
 	 
 	$resultat = $req->fetch();
@@ -19,7 +19,7 @@ if(!empty($_POST)){// Hachage du mot de passe
 	if (!$resultat)
 	{
 	    echo 'Mauvais identifiant ou mot de passe !';
-      header('Location: index.php?page=admin.php');
+      header('Location: fsdf.php');
         die('redirecting...');
 	}
 	else
@@ -30,7 +30,7 @@ if(!empty($_POST)){// Hachage du mot de passe
 	    setcookie('email', $pseudo, time() + 365*24*3600, null, null, false, true); // On écrit un cookie
 		  setcookie('pass', $pass_hache, time() + 365*24*3600, null, null, false, true); // On écrit un autre cookie...
 	    echo 'Vous êtes connecté !';
-	     header('Location: index.php?page=admin.php');
+	     header('Location: index.php');
             die('redirecting...');
 	}
 }
@@ -48,7 +48,7 @@ if(!empty($_POST)){// Hachage du mot de passe
                     
                   <div class="form-group">
                     <label for="nom">Mot de passe :</label>
-                    <input class="form-control" type="text" name="pass" id="pass" class="input-xlarge"/>
+                    <input class="form-control" type="password" name="pass" id="pass" class="input-xlarge"/>
                     
                   <div class="form-group">
 

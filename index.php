@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <?php include "include/header.php"; ?>
-=======
-<?php include "include/header.php"; ?> 
->>>>>>> 5f9eead17c507a18caf22bd7b2156f3677822b5e
     <div class="container">
       <div class="starter-template">
         <h1>Bootstrap starter template</h1>
