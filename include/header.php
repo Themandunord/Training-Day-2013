@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site de convoiturage">
     <meta name="author" content="Ensisa">
+	<link type="image/x-icon" rel="icon" href="img/favicon.ico">
 
     <title>Ensisa Covoiturage</title>
 
