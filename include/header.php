@@ -40,15 +40,9 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-<<<<<<< HEAD
             <li id="home" class="active"><a href="./index.php">Home</a></li>
             <li><a id="login" href="./login.php">login</a></li>
             <li><a id="contact" href="./contact.php">Contact</a></li>
-=======
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="contact.php">Contact</a></li>
->>>>>>> 808b4b1a9b60133fb7dc4b88d717172f6fa3754e
           </ul>
         </div><!--/.nav-collapse -->
       </div>
