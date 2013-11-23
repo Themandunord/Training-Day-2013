@@ -42,10 +42,7 @@ if(!empty($_POST)){// Hachage du mot de passe
     <!-- Element du body-->
 
         <div class="" id="loginModal">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h1>Connexion</h1>
-          </div>
+          
           <div class="modal-body">
             <div class="well">
               <ul class="nav nav-tabs">
@@ -86,21 +83,21 @@ if(!empty($_POST)){// Hachage du mot de passe
                 <div class="tab-pane fade" id="create">
                   <form id="tab" method="POST" action="include/register.php">
                     <label for="nom">Nom :</label>
-                      <p><input type="text" name="name_new" id="name_new"/></p>
+                      <input type="text" name="name_new" id="name_new"/>
                       
                     <label for="">Prénom :</label>
-                      <p><input type="text" name="firstname_new" id="firstname_new"/></p>
+                      <input type="text" name="firstname_new" id="firstname_new"/>
                       
                     <label for="mail"> Adresse mail :</label>
-                      <p> <input type="email" name="email_new" id="email_new" /></p>
+                    <input type="email" name="email_new" id="email_new" />
 
                     <label>Votre mot de passe :</label>
-                      <p><input type="password" name="pass_new" id="pass_new" /></p>
+                    <input type="password" name="pass_new" id="pass_new" />
                       
                     <label>Téléphone :</label>
-                      <p><input type="tel" name="phone_new" id="phone_new"/></p>
-                      
-                      <button class="btn btn-primary">Créer un compte</button>
+                    <input type="tel" name="phone_new" id="phone_new"/>
+
+                    <button class="btn btn-primary">Créer un compte</button>
                     </div>
                   </div>
                 </form>
@@ -112,5 +109,9 @@ if(!empty($_POST)){// Hachage du mot de passe
       </div>
     </div>
   </div>
+<<<<<<< HEAD
+</div>
+=======
 </div>
 <?php include "include/footer.php"; ?>
+>>>>>>> f25db85c93d7f988400f4b0791e96a940af0deee
