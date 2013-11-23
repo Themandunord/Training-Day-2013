@@ -42,7 +42,7 @@
         <div id="top-menu" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li id="home" class="active"><a href="./index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li id="login"><a href="./login.php"><span class="glyphicon glyphicon-road"></span> Login</a></li>
+            <li id="login"><a href="./login.php"><span class="glyphicon glyphicon-ok-sign"></span> Login</a></li>
 			<li id="recherche"><a href="./recherche.php"><span class="glyphicon glyphicon-search"></span> Recherche</a></li>
             <li id="contact"><a href="./contact.php"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
           </ul>
