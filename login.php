@@ -1,4 +1,5 @@
-<?php
+<?php include "include/header.php"; 
+
 
 if(!empty($_POST)){// Hachage du mot de passe
 	$pass_hache = md5($_POST['pass']);
@@ -104,4 +105,5 @@ if(!empty($_POST)){// Hachage du mot de passe
       </div>
     </div>
   </div>
-</div>a
+</div>
+<?php include "include/footer.php"; ?>
