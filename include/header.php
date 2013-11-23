@@ -43,6 +43,7 @@
           <ul class="nav navbar-nav">
             <li id="home" class="active"><a href="./index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li id="login"><a href="./login.php"><span class="glyphicon glyphicon-road"></span> Login</a></li>
+			<li id="recherche"><a href="./recherche.php">Recherche</a></li>
             <li id="contact"><a href="./contact.php"><span class="glyphicon glyphicon-road"></span> Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
