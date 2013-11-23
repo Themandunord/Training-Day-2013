@@ -8,7 +8,7 @@ if(!empty($_POST)){// Hachage du mot de passe
 	include 'include/database.php'
 
 	// Vérification des identifiants
-	$req = $bdd->prepare('SELECT id FROM user WHERE pseudo = :pseudo AND pass = :pass');
+	$req = $db->prepare('SELECT id FROM user WHERE pseudo = :pseudo AND pass = :pass');
 	$req->execute(array(
 	    'pseudo' => $pseudo,
 	    'pass' => $pass_hache));
