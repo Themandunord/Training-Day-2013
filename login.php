@@ -109,9 +109,6 @@ if(!empty($_POST)){// Hachage du mot de passe
       </div>
     </div>
   </div>
-<<<<<<< HEAD
 </div>
-=======
 </div>
 <?php include "include/footer.php"; ?>
->>>>>>> f25db85c93d7f988400f4b0791e96a940af0deee
