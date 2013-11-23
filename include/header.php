@@ -38,11 +38,11 @@
           </button>
           <a class="navbar-brand" href="#">Ensisa Convoiturage</a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div id="top-menu" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li id="home" class="active"><a href="./index.php">Home</a></li>
-            <li><a id="login" href="./login.php">login</a></li>
-            <li><a id="contact" href="./contact.php">Contact</a></li>
+            <li id="login"><a href="./login.php">login</a></li>
+            <li id="contact"><a href="./contact.php">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
