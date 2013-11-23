@@ -37,78 +37,63 @@ if(!empty($_POST)){// Hachage du mot de passe
 
 ?>
 
-   <div class="container" style="width:80%;">
-        <div class="hero-unit">
-    <!-- Element du body-->
+   <div class="container" style="margin-top:100px">    
+            <form action='login.php' method="POST">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h2>Connexion</h2>
+                 <div class="form-group">
+                  <label for="nom">Email :</label>
+                    <input class="form-control" type="text" name="name_new" id="name_new" class="input-xlarge"/>
+                    
+                  <div class="form-group">
+                    <label for="nom">Mot de passe :</label>
+                    <input class="form-control" type="text" name="name_new" id="name_new" class="input-xlarge"/>
+                    
+                  <div class="form-group">
 
-        <div class="" id="loginModal">
-          
-          <div class="modal-body">
-            <div class="well">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
-                <li><a href="#create" data-toggle="tab">Créer un compte</a></li>
-              </ul>
-              <div id="myTabContent" class="tab-content">
-                <div class="tab-pane active in" id="login">
-                  <form class="form-horizontal" action='login.php' method="POST">
-                    <fieldset>
-                        <legend class="">Login</legend>   
-                      <div class="control-group">
-                        <!-- Username -->
-                        <label class="control-label"  for="user">Pseudo</label>
-                        <div class="controls">
-                          <input type="text" id="user" name="user" placeholder="" class="input-xlarge">
-                        </div>
-                      </div>
- 
-                      <div class="control-group">
-                        <!-- Password-->
-                        <label class="control-label" for="pass">Mot de passe</label>
-                        <div class="controls">
-                          <input type="password" id="pass" name="pass" placeholder="" class="input-xlarge">
-                        </div>
-                      </div>
- 
- 
-                      <div class="control-group">
-                        <!-- Button -->
-                        <div class="controls">
-                          <button class="btn btn-success">Login</button>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>                
                 </div>
-                <div class="tab-pane fade" id="create">
-                  <form id="tab" method="POST" action="include/register.php">
-                    <label for="nom">Nom :</label>
-                      <input type="text" name="name_new" id="name_new"/>
-                      
-                    <label for="">Prénom :</label>
-                      <input type="text" name="firstname_new" id="firstname_new"/>
-                      
-                    <label for="mail"> Adresse mail :</label>
-                    <input type="email" name="email_new" id="email_new" />
 
-                    <label>Votre mot de passe :</label>
-                    <input type="password" name="pass_new" id="pass_new" />
-                      
-                    <label>Téléphone :</label>
-                    <input type="tel" name="phone_new" id="phone_new"/>
 
-                    <button class="btn btn-primary">Créer un compte</button>
-                    </div>
+                <div class="control-group">
+                  <!-- Button -->
+                  <div class="controls">
+                    <button class="btn btn-success">Login</button>
                   </div>
-                </form>
-                
-            </div>
+                </div>
+              </div>
+              </div>
+            </form>                
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Créer un compte</h2>
+            <form role="form" id="tab" method="POST" action="include/register.php">
+                <div class="form-group">
+                <label for="nom">Nom :</label>
+                  <input class="form-control" type="text" name="name_new" id="name_new" class="input-xlarge"/>
+                  
+                <div class="form-group">
+                <label for="">Prénom :</label>
+                  <input class="form-control" type="text" name="firstname_new" id="firstname_new" class="input-xlarge"/>
+                </div> 
+                <div class="form-group">
+                  <label for="mail"> Adresse mail :</label>
+                  <input class="form-control" type="email" name="email_new" id="email_new" class="input-xlarge"/>
+                </div>
+                <div class="form-group">
+                  <label>Votre mot de passe :</label>
+                  <input class="form-control" type="password" name="pass_new" id="pass_new" class="input-xlarge"/>
+                </div>    
+                <div class="form-group">
+                  <label>Téléphone :</label>
+                  <input class="form-control" type="tel" name="phone_new" id="phone_new" class="input-xlarge"/>
+                </div>
+                <button class="btn btn-primary">Créer un compte</button>
+              
+            </form>
           </div>
         </div>
-
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="clearfix"></div>
 </div>
 <?php include "include/footer.php"; ?>
