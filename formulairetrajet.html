@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Paramètres de votre trajet</title>
+    </head>
+
+    <body>
+<p>
+
+<h1>Le trajet que vous proposez</h1>
+
+<form method="post" action="traitement.php">
+<div>
+
+<label>Ville de départ :</label>
+  <p><input type="text" name="villedepart" /></p>
+<label>Heure de départ :</label>
+	<p><input type="text" name="heuredepart" /></p>
+<label>Ville d'arrivée :</label>
+	<p><input type="text" name="villearrivee" /></p>
+<label>Heure d'arrivée prévue :</label>
+	<p><input type="text" name="heurearrivee"/></p>
+	<p>
+       <label for="comment">Ajoutez ici des indications supplémentaires (tolérance aux retards, etc...)</label><br />
+       <textarea name="comment" id="comment" rows="10" cols="50"></textarea>
+   </p>
+
+</div>
+
+
+</form>
+
+</p>    
+    </body>
+</html>
