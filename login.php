@@ -5,7 +5,7 @@ if(!empty($_POST)){// Hachage du mot de passe
 	$pseudo = $_POST['pseudo'];
 	 
 
-	include 'include/database.php'
+	include 'include/database.php';
 
 	// Vérification des identifiants
 	$req = $db->prepare('SELECT id FROM user WHERE pseudo = :pseudo AND pass = :pass');
@@ -83,7 +83,7 @@ if(!empty($_POST)){// Hachage du mot de passe
                   </form>                
                 </div>
                 <div class="tab-pane fade" id="create">
-                  <form id="tab" method="POST" action="registrer.php">
+                  <form id="tab" method="POST" action="include/register.php">
                     <label for="user_new">Pseudo</label>
                     <input type="text" name="user_new" id="user_new" class="input-xlarge">
                     <label for="email_new">Email</label>
