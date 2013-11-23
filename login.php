@@ -3,15 +3,15 @@
 
 if(!empty($_POST)){// Hachage du mot de passe
 	$pass_hache = md5($_POST['pass']);
-	$pseudo = $_POST['pseudo'];
+	$pseudo = $_POST['email'];
 	 
 
 	include 'include/database.php';
 
 	// Vérification des identifiants
-	$req = $db->prepare('SELECT id FROM user WHERE pseudo = :pseudo AND pass = :pass');
+	$req = $db->prepare('SELECT id FROM user WHERE email = :email AND pass = :pass');
 	$req->execute(array(
-	    'pseudo' => $pseudo,
+	    'email' => $email,
 	    'pass' => $pass_hache));
 	 
 	$resultat = $req->fetch();
@@ -26,8 +26,8 @@ if(!empty($_POST)){// Hachage du mot de passe
 	{
 	    session_start();
 	    $_SESSION['id'] = $resultat['id'];
-	    $_SESSION['pseudo'] = $pseudo;
-	    setcookie('pseudo', $pseudo, time() + 365*24*3600, null, null, false, true); // On écrit un cookie
+	    $_SESSION['email'] = $pseudo;
+	    setcookie('email', $pseudo, time() + 365*24*3600, null, null, false, true); // On écrit un cookie
 		  setcookie('pass', $pass_hache, time() + 365*24*3600, null, null, false, true); // On écrit un autre cookie...
 	    echo 'Vous êtes connecté !';
 	     header('Location: index.php?page=admin.php');
@@ -44,11 +44,11 @@ if(!empty($_POST)){// Hachage du mot de passe
                   <h2>Connexion</h2>
                  <div class="form-group">
                   <label for="nom">Email :</label>
-                    <input class="form-control" type="text" name="name_new" id="name_new" class="input-xlarge"/>
+                    <input class="form-control" type="text" name="email" id="email" class="input-xlarge"/>
                     
                   <div class="form-group">
                     <label for="nom">Mot de passe :</label>
-                    <input class="form-control" type="text" name="name_new" id="name_new" class="input-xlarge"/>
+                    <input class="form-control" type="text" name="pass" id="pass" class="input-xlarge"/>
                     
                   <div class="form-group">
 
